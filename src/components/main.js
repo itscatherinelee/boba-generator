@@ -1,6 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './home'
+import DingTea from './dingtea'
+import TeaTop from './teatop'
 import BobaGuys from './bobaguys'
 
 // The Main component renders one of the three provided
@@ -12,6 +14,8 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
+      <Route exact path='/dingtea' component={DingTea}/>
+      <Route exact path='/teatop' component={TeaTop}/>
       <Route path='/bobaguys' component={BobaGuys}/>
     </Switch>
   </main>

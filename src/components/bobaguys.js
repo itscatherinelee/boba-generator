@@ -4,14 +4,24 @@ import Wheel from './wheel'
 export class BobaGuys extends React.Component {
   constructor() {
     super();
-    this.places = ['Classic Milk Tea', 'Jasmine Milk Tea', 'Hong Kong Style', 'Horchata', 'Thai Tea',
-    'Coffee Milk Tea', 'Muscat Oolong', 'Lychee Green Tea', 'Coconut Green Tea', 'Indian Chai', 'Duke of Earl Grey'];
+    this.places = [
+      'Classic Milk Tea', 
+      'Jasmine Milk Tea', 
+      'Hong Kong Style', 
+      'Horchata', 
+      'Thai Tea',
+      'Coffee Milk Tea', 
+      'Muscat Oolong', 
+      'Lychee Green Tea', 
+      'Coconut Green Tea', 
+      'Indian Chai', 
+      'Duke of Earl Grey'];
   }
 
   render() {
     return (
       <div className="App">
-        <h1>WBoba Guys</h1>
+        <h1>Boba Guys</h1>
         <Wheel items={this.places} />
       </div>
     );
